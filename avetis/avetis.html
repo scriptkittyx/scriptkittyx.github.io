@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Avetis Healthcare UI Application Demo</title>
+  
+  <!--   ..
+             "$$$$$e.
+                "$$$$$$$e.
+                   *$$$$$$$$e
+              "ee..  ^*$$$$$$$b
+                *$$$$$$$$$$$$$$$
+                  *$$$$$$$$$$$$$b
+                    "$$$$$$$$$$$$.
+               $$$eeec3$$$$$$$$$$$
+                *$$$$$$$$$$$$$$$$$L
+                 "$$$$$$$$$$$$$$$$$ ..eeee.
+                   "$$$$$$$$$$$$$$$$$$$$$$$$b    ===================================================
+=c.                  $$$$$$$$$$$$$$$$$$$$$$$$$$$
+  *$$bc            d$$$$$$$$$$$$$$$$$$$$$$$$$$"
+    "$$$$$be...e$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+      *$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$P*"
+       ^$$$$$$$$$$$$$$$$$$$$$$$$$$$$F
+        $$$$$$$$$$$$$$$$$$$$$$$$$$$$"         AVETIS HEALTH APPLICATION
+        $$$$$$$*"     $$$$$$$$$$$$$$          powered by SADA Systems
+       $$$$$P"      .$$$$$$$$$$$$$$$
+      $$$$"        .$$$$$$$$$$$$$$$$
+    .$$*          .$$$$$$$$$$$$$$$$"         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   zP"           .$$P**$$$$$$$$$$$"
+                     z$$$$$$$$$$$P
+                    d$$$$$$$$$$$P
+                   $$$$*)$$$$$$"             Curated by SADA MES Team
+                 .$*"  d$$$$$$               UX Design by Christopher Rossi
+                     z$$$$$$"                UI Design/Front End Code by Nicole Dormido
+                    $$$$$$"
+                  z$$$$P"      =============================================================
+                .$$$$"
+                ""
+-->
+
+  <meta name="description" content="Avetis Health UI Application Demo">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="author" content="Nicole Dormido at SADA Systems"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+
+  <!-- FAVICON-->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+  <!-- BOOTSTRAP & JQUERY & CUSTOM -->
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="js/jquery.js"></script>
+
+</head>
+<body>
+
+            <!-- BIRD PRELOADER -->
+              
+            <div class="bird-fade">
+                <div style="margin: 15px 0; text-align: center;">
+                    <small style="text-align: center;letter-spacing: 4.7px;color: #ffffff;margin-bottom: 10px;">AVETIS HEALTH DEMO</small></div><button class="bird-button jumbotron-heading">Start Experience</button>
+            </div>
+        
+              <div class="bird-body-container">
+                <div class="bird-container">
+                  <div class="bird"></div>
+                </div>
+              </div>
+              
+              <div class="powered-by">powered by <img src="img/sada-logo.png"></div>
+
+            <section class="main-experience"><img src="img/avetis-bird.png" class="main-bird-bg">
+
+            <!-- NAV MENU HEADER -->
+
+            <div class="header">
+                <div class="container">
+                <!-- Navigation Menu Start -->
+                <div class="navigation">
+                  <div class="row">
+                      <!-- Navigation Menu Link Lists -->
+                      <div class="col-sm-4 col-xs-12">
+                        <img src="img/avetis-bird.png" class="menu-bird">
+                        <div class="menu br-lblue">
+                          <span class="br-lblue"><i class="fa fa-desktop"></i> &nbsp; Medical Professionals (Doctor/Nurse)</span>
+                          <div class="menu-list">
+                            <ul>
+                              <li>
+                                <a href="#schedule-nurse">Scheduling</a>
+                              </li>
+                              <li>
+                                  <a href="#message-doctor">Messaging</a>
+                              </li>
+                              <li>
+                                <a href="#patient-history">Patient Record</a>
+                              </li>
+                              <li>
+                                <a href="#training-library">Training Library</a>
+                              </li>
+                              <li>
+                                <a href="#training-plan">Training Plan</a>
+                              </li>
+                              <li>
+                                <a href="#analytics">Analytics</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-6">
+                        <img src="img/avetis-bird.png" class="menu-bird">
+                        <div class="menu br-green">
+                          <span class="br-green"><i class="fa fa-desktop"></i> &nbsp; Patient/Parent</span>
+                          <div class="menu-list">
+                            <ul>
+                              <li>
+                                <a href="#schedule-patient">Scheduling</a>
+                              </li>
+                              <li>
+                                <a href="#parent-share-data">Share Data (Parent Sharing View)</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-6">
+                        <img src="img/avetis-bird.png" class="menu-bird">
+                        <div class="menu br-red">
+                          <span class="br-red"><i class="fa fa-desktop"></i> &nbsp; Schools/Institutions</span>
+                          <div class="menu-list">
+                            <ul>
+                              <li>
+                                <a href="#nurse-share-data">Share Data (School Nurse View)</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation menu end -->
+              
+              
+
+              <div class="head" style="display:none;">
+                <div class="container">
+                  <div class="row">
+                  <div class="col-md-3 col-sm-4">
+                  <!-- Logo and Head Text -->
+                  <div class="logo">
+                    <!-- Logo Icon and Heading --><img alt="" class="img-responsive avetis-logo logo-refresh" src="img/avetis-logo.png" width="110"><h4 class="experience-menu" style="display:none;">App Experience Menu</h4>
+                  </div>
+                  </div>
+                  <div class="col-md-6 hidden-sm">
+                  &nbsp;
+                  </div>
+                  <div class="col-md-3 hidden-sm text-right" style="float:right;">
+                    <div class="menu-btn header-slider">
+                      <div id="nav-icon3">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                  </div>
+                    </div>
+                </div>
+                </div>
+              </div>        
+
+
+              <div class="exp-buttons">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="next-exp-button" id="next-exp">next <img src="img/right-arrow.png" width="15"></div>
+                      <div class="prev-exp-button" id="prev-exp"><img src="img/right-arrow.png" width="15" class="prev-img-flip"> prev</div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- APP SCREEN DISPLAYS-->
+              <div id="main" class="main">
+
+                <div class="dashboard-main">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div  class="white-box">
+                          
+
+                          <div class="carousel slide" data-ride="carousel" data-interval="false" id="dashboardindicators">
+                            
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="carousel-caption">Dashboard<span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div>
+                                <img alt="First slide" class="d-block w-100" src="img/Dashboard1.png">
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+    
+                <div id="analytics" class="current" style="display:none;">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12 col-lg-12">
+                        <div  class="white-box">
+                        
+
+                        <div class="carousel slide" data-ride="carousel" data-interval="false" id="analyticsindicators">
+                          <ol class="carousel-indicators">
+                            <li class="active" data-slide-to="0" data-target="#analyticsindicators"></li>
+                            <li class="active" data-slide-to="1" data-target="#analyticsindicators"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <div class="carousel-caption">Analytics<span class="screen-person"><img src="img/person.png">Doctor/Nurse</span>
+                               </div>
+                              <img alt="First slide" class="d-block w-100" src="img/Analytics1.png">
+                            </div>
+                            <div class="carousel-item">
+                              <div class="carousel-caption">Analytics<span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div>
+                              <img alt="First slide" class="d-block w-100" src="img/Analytics2.png">
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" data-slide="prev" href="#analyticsindicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> 
+                          <a class="carousel-control-next" data-slide="next" href="#analyticsindicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+
+                <div id="patient-history" style="display:none;">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div  class="white-box">
+                          
+                  
+                          <div class="carousel slide" data-ride="carousel" data-interval="false" id="patienthistoryindicators">
+                            <ol class="carousel-indicators">
+                              <li class="active" data-slide-to="0" data-target="#patienthistoryindicators"></li>
+                              <li data-slide-to="1" data-target="#patienthistoryindicators"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="carousel-caption">Patient Record <span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div>
+                                <img alt="First slide" class="d-block w-100" src="img/PatientHistory2.png">
+                              </div>
+                              <div class="carousel-item"><div class="carousel-caption">Patient Record: Visual Acuity <span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/PatientHistory1.png"></div>
+                            </div>
+                            <a class="carousel-control-prev" data-slide="prev" href="#patienthistoryindicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> 
+                            <a class="carousel-control-next" data-slide="next" href="#patienthistoryindicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  
+
+                <div id="nurse-share-data" style="display:none;">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div  class="white-box mobile-experience">
+                          
+                  
+                          <div class="carousel slide" data-ride="carousel" data-interval="false" id="nursedataindicators">
+                            <ol class="carousel-indicators">
+                              <li class="active" data-slide-to="0" data-target="#nursedataindicators"></li>
+                              <li data-slide-to="1" data-target="#nursedataindicators"></li>
+                              <li data-slide-to="2" data-target="#nursedataindicators"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="carousel-caption">Share My Data <span class="screen-person"><img src="img/person.png">School Nurse</span></div><img alt="First slide" class="d-block w-100" src="img/SANurse1.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Share My Data<span class="screen-person"><img src="img/person.png">School Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/SANurse2.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Share My Data <span class="screen-person"><img src="img/person.png">School Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/SANurse3.png">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" data-slide="prev" href="#nursedataindicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> 
+                            <a class="carousel-control-next" data-slide="next" href="#nursedataindicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+                <div id="parent-share-data" style="display:none;">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div  class="white-box mobile-experience">
+                          
+                  
+                          <div class="carousel slide" data-ride="carousel" data-interval="false" id="parentdataindicators">
+                            <ol class="carousel-indicators">
+                              <li class="active" data-slide-to="0" data-target="#parentdataindicators"></li>
+                              <li data-slide-to="1" data-target="#parentdataindicators"></li>
+                              <li data-slide-to="2" data-target="#parentdataindicators"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="carousel-caption">Share My Data <span class="screen-person"><img src="img/person.png">Parent/Patient</span></div><img alt="First slide" class="d-block w-100" src="img/SAParent2.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Share My Data<span class="screen-person"><img src="img/person.png">Parent/Patient</span></div><img alt="Second slide" class="d-block w-100" src="img/SAParent3.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Share My Data <span class="screen-person"><img src="img/person.png">Parent/Patient</span></div><img alt="Second slide" class="d-block w-100" src="img/SAParent4.png">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" data-slide="prev" href="#parentdataindicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> 
+                            <a class="carousel-control-next" data-slide="next" href="#parentdataindicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+                <div id="message-doctor" style="display:none;">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div  class="white-box">
+                          
+                  
+                          <div class="carousel slide" data-ride="carousel" data-interval="false" id="messagingdoctorindicators">
+                            <ol class="carousel-indicators">
+                              <li class="active" data-slide-to="0" data-target="#messagingdoctorindicators"></li>
+                              <li data-slide-to="1" data-target="#messagingdoctorindicators"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="carousel-caption">Messaging <span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="First slide" class="d-block w-100" src="img/SMDoctor1.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Messaging<span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/SMDoctor2.png">
+                              </div>
+                              <!-- div class="carousel-item">
+                                <div class="carousel-caption">Messaging <span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/SMDoctor3.png">
+                              </div> -->
+                            </div>
+                            <a class="carousel-control-prev" data-slide="prev" href="#messagingdoctorindicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> 
+                            <a class="carousel-control-next" data-slide="next" href="#messagingdoctorindicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+               
+
+                <div id="schedule-nurse" class="schedule-nurse" style="display:none;">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div  class="white-box">
+                          
+                  
+                          <div class="carousel slide" data-ride="carousel" data-interval="false" id="schedulingnurseindicators">
+                            <ol class="carousel-indicators">
+                              <li class="active" data-slide-to="0" data-target="#schedulingnurseindicators"></li>
+                              <li data-slide-to="1" data-target="#schedulingnurseindicators"></li>
+                              <li data-slide-to="2" data-target="#schedulingnurseindicators"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="carousel-caption">Scheduling<span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="First slide" class="d-block w-100" src="img/SMNurse1.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Scheduling<span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/SMNurse2.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Scheduling <span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/SMNurse3.png">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" data-slide="prev" href="#schedulingnurseindicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> 
+                            <a class="carousel-control-next" data-slide="next" href="#schedulingnurseindicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+                <div id="schedule-patient" style="display:none;">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div  class="white-box mobile-experience">
+                          
+                  
+                          <div class="carousel slide" data-ride="carousel" data-interval="false" id="schedulingpatientindicators">
+                            <ol class="carousel-indicators">
+                              <li class="active" data-slide-to="0" data-target="#schedulingpatientindicators"></li>
+                              <li data-slide-to="1" data-target="#schedulingpatientindicators"></li>
+                              <li data-slide-to="2" data-target="#schedulingpatientindicators"></li>
+                              <li data-slide-to="3" data-target="#schedulingpatientindicators"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="carousel-caption">Scheduling <span class="screen-person"><img src="img/person.png">Parent/Patient</span></div><img alt="First slide" class="d-block w-100" src="img/SMPatient0.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Scheduling<span class="screen-person"><img src="img/person.png">Parent/Patient</span></div><img alt="Second slide" class="d-block w-100" src="img/SMPatient1.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Scheduling <span class="screen-person"><img src="img/person.png">Parent/Patient</span></div><img alt="Second slide" class="d-block w-100" src="img/SMPatient2.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Scheduling <span class="screen-person"><img src="img/person.png">Parent/Patient</span></div><img alt="Second slide" class="d-block w-100" src="img/SMPatient3.png">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" data-slide="prev" href="#schedulingpatientindicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> 
+                            <a class="carousel-control-next" data-slide="next" href="#schedulingpatientindicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div id="training-library" style="display:none;">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div  class="white-box">
+                          
+                  
+                          <div class="carousel slide" data-ride="carousel" data-interval="false" id="traininglibraryindicators">
+                            <ol class="carousel-indicators">
+                              <li class="active" data-slide-to="0" data-target="#traininglibraryindicators"></li>
+                              <li data-slide-to="1" data-target="#traininglibraryindicators"></li>
+                              <li data-slide-to="2" data-target="#traininglibraryindicators"></li>
+                              <li data-slide-to="3" data-target="#traininglibraryindicators"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="carousel-caption">Training Library<span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/TrainingLibrary1.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Training Library <span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/TrainingLibrary2.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Training Library <span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/TrainingLibrary3.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Training Library <span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/TrainingLibrary4.png">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" data-slide="prev" href="#traininglibraryindicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> 
+                            <a class="carousel-control-next" data-slide="next" href="#traininglibraryindicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div id="training-plan" style="display:none;">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div  class="white-box">
+                          
+                  
+                          <div class="carousel slide" data-ride="carousel" data-interval="false" id="trainingplanindicators">
+                            <ol class="carousel-indicators">
+                              <li class="active" data-slide-to="0" data-target="#trainingplanindicators"></li>
+                              <li data-slide-to="1" data-target="#trainingplanindicators"></li>
+                              <li data-slide-to="2" data-target="#trainingplanindicators"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="carousel-caption">Training Plan<span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/TrainingPlan1.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Training Plan <span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/TrainingPlan2.png">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="carousel-caption">Training Plan <span class="screen-person"><img src="img/person.png">Doctor/Nurse</span></div><img alt="Second slide" class="d-block w-100" src="img/TrainingPlan3.png">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" data-slide="prev" href="#trainingplanindicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> 
+                            <a class="carousel-control-next" data-slide="next" href="#trainingplanindicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+                              
+            </section>             
+              
+    <!-- JS SCRIPTS -->
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+</body>
+</html>
